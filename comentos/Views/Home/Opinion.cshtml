@@ -1,0 +1,23 @@
+﻿@model comentos.Models.Opinion
+
+@{
+    ViewData["Title"] = "Formulario opinion";
+}
+
+<h2>Opinion</h2>
+<div class="text-center">
+ @using (Html.BeginForm())
+ {
+     @Html.AntiForgeryToken
+
+     @Html.ValidationSummary(true,"",new{ @class="text-danger"})
+     <div class="Form-group">
+         @Html.Label
+         <div class="col-md-10">
+             @Html.EditorFor(model=>model comentario.)
+         </div>
+
+     </div>
+ }
+
+</div>
